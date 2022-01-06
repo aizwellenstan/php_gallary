@@ -1,0 +1,133 @@
+.block-categories {
+    box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, .1);
+    background: white;
+    padding: 1.5625rem 1.25rem;
+    margin-bottom: 1.5625rem
+}
+
+.block-categories .category-sub-menu {
+    margin-top: .625rem
+}
+
+.block-categories .category-sub-menu .category-sub-link {
+    font-size: .875rem
+}
+
+.block-categories .category-sub-menu li {
+    position: relative
+}
+
+.block-categories .category-sub-menu li[data-depth="1"] {
+    margin-bottom: .625rem
+}
+
+.block-categories .category-sub-menu li[data-depth="0"]>a {
+    font-weight: 600;
+    border-bottom: #ebebeb 2px solid;
+    width: 100%;
+    display: inline-block;
+    margin: .3125rem 0 0;
+    padding-bottom: .1875rem
+}
+
+.block-categories .category-sub-menu li:not([data-depth="0"]):not([data-depth="1"]) {
+    padding-left: .3125rem
+}
+
+.block-categories .category-sub-menu li:not([data-depth="0"]):not([data-depth="1"])::before {
+    content: "-";
+    margin-right: .3125rem
+}
+
+.block-categories a {
+    color: #414141
+}
+
+.block-categories .collapse-icons {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    padding: 0;
+    cursor: pointer
+}
+
+.block-categories .collapse-icons i {
+    font-size: 16px
+}
+
+.block-categories .collapse-icons[aria-expanded="true"] .add {
+    display: none
+}
+
+.block-categories .collapse-icons[aria-expanded="true"] .remove {
+    display: block
+}
+
+.block-categories .collapse-icons .add:hover,
+.block-categories .collapse-icons .remove:hover {
+    color: #333
+}
+
+.block-categories .collapse-icons .remove {
+    display: none
+}
+
+.block-categories .arrows .arrow-right,
+.block-categories .arrows .arrow-down {
+    font-size: .875rem;
+    cursor: pointer;
+    margin-left: 2px
+}
+
+.block-categories .arrows .arrow-right:hover,
+.block-categories .arrows .arrow-down:hover {
+    color: #333
+}
+
+.block-categories .arrows .arrow-down {
+    display: none
+}
+
+.block-categories .arrows[aria-expanded="true"] .arrow-right {
+    display: none
+}
+
+.block-categories .arrows[aria-expanded="true"] .arrow-down {
+    display: inline-block
+}
+.block-categories a.h6 {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    text-transform: capitalize!important
+}
+
+.block-categories .category-sub-menu {
+    margin: 0
+}
+
+
+.block-categories .category-sub-menu li a:hover {
+    color: #e33
+}
+
+.block-categories .category-sub-menu li[data-depth="0"]>a {
+    border-bottom: 1px solid #ebebeb;
+    margin: 0;
+    line-height: 25px;
+    padding: 10px 0
+}
+
+.block-categories .category-sub-menu li[data-depth="1"] {
+    margin: 10px 0 0 0
+}
+
+.block-categories .category-sub-menu .category-sub-link {
+    font-size: 12px
+}
