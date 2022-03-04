@@ -19,9 +19,9 @@ class Photos extends Admin_Controller {
     }
 
 
-	public function index($pj_id, $pick_sequence)
+	public function index($pj_id=0, $pick_sequence=0)
 	{
-
+        if ($pj_id==0) redirect('dashboard',"refresh");
         $this->data['project'] = $this->core_model->get_project_list($pj_id);
 
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
